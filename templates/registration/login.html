@@ -1,0 +1,13 @@
+<!-- templates/registration/login.html -->
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/style.css' %}">
+
+<div class="center_block">
+  <h2>Log In</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Log In</button>
+  </form>
+</div> 

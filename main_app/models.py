@@ -1,10 +1,12 @@
-from django.db import models
+import datetime
+from django.db import models 
+from django.contrib.auth.models import Group
+from django.utils import timezone
 
-# Create your models here.
-
-class Student(models.Model):
-    student_index = models.CharField( max_length=6)
-    student_name = models.CharField( max_length=30 )
-    student_surname = models.CharField( max_length=30 )
-    create_date = models.DateTimeField('Creation Date')
+class Task(models.Model): 
+    task_name = models.CharField(max_length=200)
+    task_url = models.CharField(max_length=200)
     
+
+    def __str__(self):
+        return self.task_name 
