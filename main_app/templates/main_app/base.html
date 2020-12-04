@@ -1,0 +1,24 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}">
+
+<body>
+    <div class="user_profile">
+        <div class="user_img">
+            <img src="{% static 'main_app/assets/user.png' %}" alt="user logo">
+        </div>
+        <div class="user_name">
+            {% if user.is_authenticated %}
+                Hi {{ user.username }}!
+                <p><a href="{% url 'logout' %}">Log Out</a></p>
+            {% else %}
+                <p>You are not logged in</p>
+                <a href="{% url 'login' %}">Log In</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
