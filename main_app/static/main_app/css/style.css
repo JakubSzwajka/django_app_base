@@ -2,97 +2,75 @@ body{
     width: 100%;
     margin: 0;
     font-family:'Montserrat', sans-serif;
-    background: rgb(2,0,36);
-    background: -moz-linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(53,53,149,1) 18%, rgba(0,212,255,1) 100%);
-    background: -webkit-linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(53,53,149,1) 18%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(53,53,149,1) 18%, rgba(0,212,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    background-color: #f6f8fa;
+    font-size: 0.8rem;
 }
-
-.login_container{
-  width: 40%;
-  max-width: 400px;
-  background-color: white;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 5%;
-  display: block;
-  padding: 20px;
-}
-
-.login_logo > img{
-  margin: 0 auto;
-  display: block;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.login_form{
-  width: 100%;
-}
-
-.login_form_input > input{
-  width: 100%;
-  padding: 10px;
-  border-radius: 15px;
-  border: none; 
-  background-color:#c0c0c0;
-  outline: none !important;
-}
-.login_form_input{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.form_submit{
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.form_submit > input {
-  border: none; 
-  border-radius: 10px;
-  background-color:#616161;
-  font-size: 1.3rem;
-  padding: 5px;
-  color: white;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  text-decoration: none;
-}
-
-
-
-/* to move to another file  */
-.user_profile{
-  background-color: white;
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-}
-
 .container{
   height: 100%;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  background-color: gray;
+  margin-left: 25%;
+  background-color:#fff;
   border: 2px black;
 }
 
-.user_name{
-  text-align: center;
+nav{
+  background-color: #24292e;
+  overflow: hidden;
+  height: 20px;
+  padding: 10px;
+}
+nav > .right_menu {
+  float: right;
+}
+nav > .right_menu > a {
+  float: left;
 }
 
-.user_img{
+nav > .right_menu > .user_profile {
+  float: left;
+  height: 100%;
+}
+
+.nav_element{
+  margin-right: 10px;
+  height: 100%;
+  width: auto;
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.nav_element > a {
+  color: white;
+}
+
+.user_img > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.logout_button{
+  text-align: right;
+}
+
+/* Tasks style */
+.tasks_container{
   padding: 20px;
 }
-.user_img > img{
-  margin: 0 auto;
-  display: block;
-  max-width: 50%;
-  max-height: 50%;
+
+.task_container{
+  border-radius: 20px;
+  background-color: f6f8fa;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px #c8c9ca solid;
+}
+
+.task_title{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
