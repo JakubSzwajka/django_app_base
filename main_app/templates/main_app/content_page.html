@@ -1,0 +1,15 @@
+<div class="tasks_container">
+    <div class="task_list">
+        {% if task_list %}
+            {% for task in task_list %}
+                <div class="task_container">
+                    <p class="task_title">{{ task.task_name }}</p> 
+                    <a class="task_link" href="{{task.task_url}}">Link</a>
+                    <p>{{task.description}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No tasks are available.</p>
+        {% endif %}
+    </div>
+</div>
