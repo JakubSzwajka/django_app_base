@@ -7,7 +7,7 @@
 <form action="" method="post" class="login_form">
   {% csrf_token %}
     {{form|crispy}}
-    <button type="submit" class="register_button">Register</button>
+    <button type="submit" class="btn btn-success">Register</button>
 
   {% if form.errors %}
   <p>Your username and password didn't match. Please try again.</p>

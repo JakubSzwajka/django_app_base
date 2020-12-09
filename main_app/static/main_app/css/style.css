@@ -51,8 +51,8 @@ nav > .right_menu > .user_profile {
 .user_img > img {
   display: block;
   margin: 0 auto 0 auto;
-  max-width: 40px;
-  max-height: 40px;
+  height: 40px;
+  width: 40px;
   margin: 10px;
   border-radius: 50%;
   border: 2px white solid;
