@@ -1,0 +1,23 @@
+<!-- templates/registration/login.html -->
+
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'register/css/login.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'register/css/register.css' %}">
+</head>
+
+<body class="">
+  <div class="login_container">
+    <div class="login_logo">
+      <img src="{% static 'main_app/assets/logo.png' %}" alt="logo">
+    </div>
+    {% block content %}
+    {% endblock content %}
+  </div>
+</body>
