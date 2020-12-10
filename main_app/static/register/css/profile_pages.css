@@ -1,0 +1,9 @@
+.user_image{
+    width: 200px;
+    height: 200px;
+}
+
+.user_image > img {
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,6 +1,9 @@
 {% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{% static 'main_app/css/style.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'main_app/css/user_profile.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'register/css/profile_pages.css' %}">
+
 
 <body>
     <div class="main_navigation">
@@ -8,6 +11,7 @@
     </div>
 
     <div class="container">
-        {% include 'main_app/content_page.html' %}
+        {% block content %}
+        {% endblock %}
     </div>
 </body>

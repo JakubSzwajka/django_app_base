@@ -1,0 +1,9 @@
+{% extends "main_app/index.html"%}
+
+{% block content %}
+    <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+    <div class="user_image">
+        <img src="{{ user.profile.profile_image.url }}" alt="user_logo">
+    </div>
+
+{% endblock %}

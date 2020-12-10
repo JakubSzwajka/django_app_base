@@ -17,7 +17,8 @@ class Task(models.Model):
         return self.task_name 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User,
+            on_delete=models.CASCADE)
     birth_date = models.DateField( null=True, blank=True)
     profile_image = models.ImageField(upload_to='user_images/', default='main_app/assets/user.png', max_length=200 )
 

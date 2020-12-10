@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'main_app/static')
 
-LOGIN_REDIRECT_URL = '/main_app'
+LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"

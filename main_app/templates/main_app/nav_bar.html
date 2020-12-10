@@ -7,13 +7,14 @@
         <div class="user_profile">
             <div class="nav_element user_name">
                 {% if user.is_authenticated %}
-                    Hi {{ user.first_name }} {{ user.last_name }}!
+                    {% comment %} Hi {{ user.first_name }} {{ user.last_name }}! {% endcomment %}
+                    Hi {{ user.get_username }}!
                 {% else %}
                     You are not logged in! <a href="{% url 'login' %}">Log In</a>
                 {% endif %}
             </div>
             <div class="nav_element user_img">
-                <img src="{{ user.profile.profile_image.url }}" alt="user logo">
+                <a href="/view_profile_page" ><img src="{{ user.profile.profile_image.url }}" alt="user logo"></a>
             </div>
         </div>
         {% if user.is_authenticated == True %}
